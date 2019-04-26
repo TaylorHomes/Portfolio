@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+{{ block.super }}
+{% endblock title %}
+{% block content %}
+
+<header class="bg-white black-80 tc pv4 avenir ttu">
+    <a href="{% url 'home' %}" class="b--black dib w4 h3 br-100">
+        <img src="{% static 'media/signature.png' %}">
+
+    </a>
+    <nav class="bt bb tc mw7 center mt4">
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l"
+            href="{% url 'development' %}">Development</a>
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l"
+            href="{% url 'illustration' %}">Illustration</a>
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l"
+            href="{% url 'about' %}">About</a>
+    </nav>
+</header>
+
+
+<article class="cf ph3 ph5-ns pv5 avenir">
+    <header class="fn fl-ns w-50-ns pr4-ns">
+        <h1 class="f1 lh-title fw2 mb3 mt0 pt3 bt bw">
+            Decreedly
+        </h1>
+        <h2 class="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
+
+            A functional and robust blog.
+        </h2>
+
+    </header>
+    <div class="fn fl-ns w-50-ns black-70 avenir">
+        <p class="f4 lh-copy measure mt0-ns">
+            I was on a team with three other developers and we built this application in one week. Modeled after
+            twitter, our goal was to create a highly functional and powerful application. Built with Python and Django,
+            this application utilizes Django's REST Framework with a responsive API that communicates to a front-end
+            built with Vue.js. We had never used Vue prior to this project, so there was a good bit of learning
+            involved. We chose Vue because as a framework, it seemed to be versatile enough to meet our needs.
+
+
+
+        </p>
+        <p class="f4 lh-copy measure">
+            We developed a complex model system through Django that would allow users many different use cases. From
+            viewing active followers, to blocking followers, we attempted to run through every instance in order to make
+            our application highly functional.
+        </p>
+        <p class="f4 lh-copy measure">
+            We loaded fake data in order to test all of our components and were ultimately very satisfies with the
+            results of our collective efforts. This was no doubt the fastest life cycle I've ever worked on, and it
+            required a lot from our team, but I think it was worth it in the end. Below are some screenshots of the
+            project. Feel free to take it for a spin <a href="https://decreedly.herokuapp.com/"
+                target="_blank">here.</a>
+        </p>
+    </div>
+</article>
+
+
+<!-- "background:url('{% static 'media/test-dev-3.png' %}') -->
+
+<section class="cf w-100 pa2-ns">
+    <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+        <div class="aspect-ratio aspect-ratio--1x1">
+            <img style="background:url('{% static 'media/decreedly-3.png' %}');"
+                class="db bg-center cover aspect-ratio--object" />
+        </div>
+        <a href="#0" class="ph2 ph0-ns pb3 link db">
+        </a>
+    </article>
+    <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+        <div class="aspect-ratio aspect-ratio--1x1">
+            <img style="background:url('{% static 'media/decreedly-2.png' %}');"
+                class="db bg-center cover aspect-ratio--object" />
+        </div>
+        <a href="#0" class="ph2 ph0-ns pb3 link db">
+        </a>
+    </article>
+    <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+        <div class="aspect-ratio aspect-ratio--1x1">
+            <img style="background:url('{% static 'media/decreedly-1.png' %}');"
+                class="db bg-center cover aspect-ratio--object" />
+        </div>
+        <a href="#0" class="ph2 ph0-ns pb3 link db">
+        </a>
+    </article>
+    <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+        <div class="aspect-ratio aspect-ratio--1x1">
+            <img style="background:url('{% static 'media/decreedly-4.png' %}');"
+                class="db bg-center cover aspect-ratio--object" />
+        </div>
+        <a href="#0" class="ph2 ph0-ns pb3 link db">
+        </a>
+    </article>
+</section>
+
+
+{% endblock content %}

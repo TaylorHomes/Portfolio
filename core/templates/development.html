@@ -7,7 +7,7 @@ Development - {{ block.super }}
 
 <header class="bg-white black-80 tc pv4 avenir ttu">
     <a href="{% url 'home' %}" class="b--black dib w4 h3 br-100">
-        <img src="{% static 'signature-one.png' %}">
+        <img src="{% static 'media/signature.png' %}">
 
     </a>
     <nav class="bt bb tc mw7 center mt4">
@@ -30,26 +30,24 @@ Development - {{ block.super }}
 </header>
 
 <article>
-    <a href="/" class="fl w-50 w-25-l link overflow-hidden">
+    <a href="{% url 'spotswood' %}" class="fl w-50 w-25-l link overflow-hidden">
         <div role="img" aria-label="" class="grow aspect-ratio--4x6 "
-            style="background:url('{% static 'media/spotswood.png' %}')center; background-size: cover;">
+            style="background:url('{% static 'media/test-dev-3.png' %}')center; background-size: cover;">
         </div>
     </a>
-    <!-- style="background:url('{% static 'selfie-square.png' %}') center;"> -->
-
-    <a href="/" class="fl w-50 w-25-l link overflow-hidden">
+    <a href="{% url 'kaiketsu' %}" class="fl w-50 w-25-l link overflow-hidden">
         <div role="img" aria-label="" class="grow aspect-ratio--4x6 "
-            style="background: url('{% static 'media/spotswood.png' %}') no-repeat center center; background-size: cover;">
+            style="background: url('{% static 'media/kaiketsu-card.png' %}') no-repeat center center; background-size: cover;">
         </div>
     </a>
-    <a href="/" class="fl w-50 w-25-l link overflow-hidden">
+    <a href="{% url 'react' %}" class="fl w-50 w-25-l link overflow-hidden">
         <div role="img" aria-label="" class="grow aspect-ratio--4x6 "
-            style="background: url('{% static 'media/spotswood.png' %}') no-repeat center center; background-size: cover;">
+            style="background: url('{% static 'media/react-card.png' %}') no-repeat center center; background-size: cover;">
         </div>
     </a>
-    <a href="/" class="fl w-50 w-25-l link overflow-hidden">
+    <a href="{% url 'decreedly' %}" class="fl w-50 w-25-l link overflow-hidden">
         <div role="img" aria-label="" class="grow aspect-ratio--4x6"
-            style="background: url('{% static 'media/spotswood.png' %}') no-repeat center center; background-size: cover;">
+            style="background: url('{% static 'media/decreedly-card.png' %}') no-repeat center center; background-size: cover;">
         </div>
     </a>
 </article>
