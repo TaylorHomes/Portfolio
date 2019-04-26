@@ -3,7 +3,7 @@
 Resume - {{ block.super }}
 {% endblock title %}
 {% block content %}
-<header class="bg-white black-80 tc pv4 avenir">
+<header class="bg-white black-80 tc pv4 avenir ttu">
     <a href="{% url 'home' %}" class="b--black dib w4 h3 br-100">
         <img src="{% static 'signature-one.png' %}">
 
@@ -18,13 +18,14 @@ Resume - {{ block.super }}
     </nav>
 </header>
 
-<div class="resume">
-    <div class="sheet">
 
-
-        <img src="{% static 'homes-resume-static.png' %}" alt="resume">
-
+<article class="mw5 mw6-ns center pt4">
+    <div class="aspect-ratio aspect-ratio--5x7 mb4">
+        <div class="aspect-ratio--object cover"
+            style="background:url('{% static 'media/homes-resume-static.png' %}') center;">
+        </div>
     </div>
-</div>
+</article>
+
 
 {% endblock content %}

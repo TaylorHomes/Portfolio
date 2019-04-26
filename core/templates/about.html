@@ -4,7 +4,7 @@ About - {{ block.super }}
 {% endblock title %}
 {% block content %}
 
-<header class="bg-white black-80 tc pv4 avenir">
+<header class="bg-white black-80 tc pv4 avenir ttu">
     <a href="{% url 'home' %}" class="b--black dib w4 h3 br-100">
         <img src="{% static 'signature-one.png' %}">
 
@@ -21,12 +21,11 @@ About - {{ block.super }}
 
 <article class="mw5 mw6-ns center pt4">
     <div class="aspect-ratio aspect-ratio--1x1 mb4">
-        <div class="aspect-ratio--object cover" style="background:url('{% static 'selfie-square.png' %}') center;">
+        <div class="aspect-ratio--object cover"
+            style="background:url('{% static 'media/selfie-square.png' %}') center;">
         </div>
     </div>
 </article>
-
-<!-- "background: url('{% static 'limbo-adj.png' %}') -->
 
 <header class="tc ph4 avenir">
     <h1 class="f3 f2-m f1-l fw2 black-90 mv3">

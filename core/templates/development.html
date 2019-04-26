@@ -5,7 +5,7 @@ Development - {{ block.super }}
 {% endblock title %}
 {% block content %}
 
-<header class="bg-white black-80 tc pv4 avenir">
+<header class="bg-white black-80 tc pv4 avenir ttu">
     <a href="{% url 'home' %}" class="b--black dib w4 h3 br-100">
         <img src="{% static 'signature-one.png' %}">
 
@@ -31,25 +31,25 @@ Development - {{ block.super }}
 
 <article>
     <a href="/" class="fl w-50 w-25-l link overflow-hidden">
-        <div role="img" aria-label="Primer movie" class="grow aspect-ratio--4x6 "
-            style="background:url('{% static 'spotswood.png' %}')center; background-size: cover;">
+        <div role="img" aria-label="" class="grow aspect-ratio--4x6 "
+            style="background:url('{% static 'media/spotswood.png' %}')center; background-size: cover;">
         </div>
     </a>
     <!-- style="background:url('{% static 'selfie-square.png' %}') center;"> -->
 
     <a href="/" class="fl w-50 w-25-l link overflow-hidden">
-        <div role="img" aria-label="The Big Short movie" class="grow aspect-ratio--4x6 "
-            style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/the-big-short.jpg) no-repeat center center; background-size: cover;">
+        <div role="img" aria-label="" class="grow aspect-ratio--4x6 "
+            style="background: url('{% static 'media/spotswood.png' %}') no-repeat center center; background-size: cover;">
         </div>
     </a>
     <a href="/" class="fl w-50 w-25-l link overflow-hidden">
-        <div role="img" aria-label="Bottle Rocket movie" class="grow aspect-ratio--4x6 "
-            style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/bottlerocket.jpg) no-repeat center center; background-size: cover;">
+        <div role="img" aria-label="" class="grow aspect-ratio--4x6 "
+            style="background: url('{% static 'media/spotswood.png' %}') no-repeat center center; background-size: cover;">
         </div>
     </a>
     <a href="/" class="fl w-50 w-25-l link overflow-hidden">
-        <div role="img" aria-label="Ex Machina movie" class="grow aspect-ratio--4x6"
-            style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/ex-machina.png) no-repeat center center; background-size: cover;">
+        <div role="img" aria-label="" class="grow aspect-ratio--4x6"
+            style="background: url('{% static 'media/spotswood.png' %}') no-repeat center center; background-size: cover;">
         </div>
     </a>
 </article>
