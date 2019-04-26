@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+Development - {{ block.super }}
+{% endblock title %}
+{% block content %}
+
+<header class="bg-white black-80 tc pv4 avenir">
+    <a href="{% url 'home' %}" class="b--black dib w4 h3 br-100">
+        <img src="{% static 'signature-one.png' %}">
+
+    </a>
+    <nav class="bt bb tc mw7 center mt4">
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l"
+            href="{% url 'development' %}">Development</a>
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l"
+            href="{% url 'illustration' %}">Illustration</a>
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l"
+            href="{% url 'about' %}">About</a>
+    </nav>
+</header>
+
+<header class="ph4 avenir">
+    <h1 class="f3 f2-m f1-l fw2 black-90 mv1">
+        Development Work
+    </h1>
+    <h2 class="f5 f4-m f3-l fw2 black-50 mt0 lh-copy">
+        Here, I keep some of my most recent development work.
+    </h2>
+</header>
+
+<article>
+    <a href="/" class="fl w-50 w-25-l link overflow-hidden">
+        <div role="img" aria-label="Primer movie" class="grow aspect-ratio--4x6 "
+            style="background:url('{% static 'spotswood.png' %}')center; background-size: cover;">
+        </div>
+    </a>
+    <!-- style="background:url('{% static 'selfie-square.png' %}') center;"> -->
+
+    <a href="/" class="fl w-50 w-25-l link overflow-hidden">
+        <div role="img" aria-label="The Big Short movie" class="grow aspect-ratio--4x6 "
+            style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/the-big-short.jpg) no-repeat center center; background-size: cover;">
+        </div>
+    </a>
+    <a href="/" class="fl w-50 w-25-l link overflow-hidden">
+        <div role="img" aria-label="Bottle Rocket movie" class="grow aspect-ratio--4x6 "
+            style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/bottlerocket.jpg) no-repeat center center; background-size: cover;">
+        </div>
+    </a>
+    <a href="/" class="fl w-50 w-25-l link overflow-hidden">
+        <div role="img" aria-label="Ex Machina movie" class="grow aspect-ratio--4x6"
+            style="background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/ex-machina.png) no-repeat center center; background-size: cover;">
+        </div>
+    </a>
+</article>
+
+
+
+
+{% endblock content %}
