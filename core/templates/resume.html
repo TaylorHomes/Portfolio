@@ -19,13 +19,23 @@ Resume - {{ block.super }}
 </header>
 
 
-<article class="mw5 mw6-ns center pt4">
+<!-- <article class="mw5 mw6-ns center pt4">
     <div class="aspect-ratio aspect-ratio--5x7 mb4">
         <div class="aspect-ratio--object cover"
             style="background:url('{% static 'media/homes-resume-static.png' %}') center;">
         </div>
     </div>
-</article>
+</article> -->
+<div class="mw5 mw6-ns center pt4">
+    <a href="{% static 'media/homes-resume-static.png' %}" target="_blank"
+        class="fn pa2 w-50 w-25-l link overflow-hidden">
+        <div role="img" aria-label="" class="grow aspect-ratio--5x7 "
+            style="background: url('{% static 'media/homes-resume-static.png' %}') no-repeat center center; background-size: cover;">
+        </div>
+    </a>
+</div>
+
+
 
 <div class="pv4 ph3 ph5-ns tc black-70">
     <a class="link dim black-40 dib h2 w2 mr3" href="https://github.com/TaylorHomes" title="GitHub" target="_blank">
