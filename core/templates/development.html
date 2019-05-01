@@ -33,46 +33,101 @@ Development - {{ block.super }}
 <hr width="95%">
 
 
-<main class="pa4 cf w-100 ba b--gray">
+<!-- <header class="tc pv4 pv5-ns">
     <a href="{% url 'spotswood' %}">
-        <div class="fl w-50 w-third-m w-25-ns">
-            <div class="grow aspect-ratio--1x1">
-                <img style="background-image:url('{% static 'media/test-dev-3.png' %}');"
-                    class="db bg-center cover aspect-ratio--object" />
-            </div>
-
-        </div>
+        <img src="https://images.unsplash.com/uploads/14123892966835548e7bd/14369636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            class="br3 ba b--black- h5 w5" alt="avatar">
     </a>
-    <a href="{% url 'spotswood' %}">
-        <div class="fl w-50 w-third-m w-25-ns">
-            <div class="grow aspect-ratio--1x1">
-                <img style="background-image:url('{% static 'media/test-dev-3.png' %}');"
-                    class="db bg-center cover aspect-ratio--object" />
+    <h1 class="f3 f2-m f1-l fw2 black-90 mv3 avenir">
+        Spotswood Building Group
+    </h1>
+    <h2 class="f5 f4-m f3-l fw2 black-50 mt0 lh-copy avenir">
+        A website I built for a local building group looking to expand their online presence.
+    </h2>
+
+</header>
+
+<hr width="80%">
+<hr width="80%"> -->
+
+<section class="mw7 center avenir">
+    <article class="bb b--black-75">
+        <a class="db pv4 ph3 ph0-l no-underline black dim" href="{% url 'spotswood' %}">
+            <div class="flex flex-column flex-row-ns">
+                <div class="pr3-ns mb4 mb0-ns w-100">
+                    <img src="https://images.unsplash.com/photo-1484499972849-a19291def0ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                        class="db" alt="">
+                </div>
+                <div class="w-100 w-60-ns pl3-ns tc">
+                    <h1 class="f3 f2-m f1-l fw2 black-90 mv3 avenir">Spotswood Building Group</h1>
+                    <h3 class="f5 f4-m f4-l fw2 black-50 mt0 lh-copy avenir">
+                        A website I built for a local building group looking to expand their online presence.
+                    </h3>
+
+
+                </div>
             </div>
+        </a>
+    </article>
+    <article class="bb b--black-75">
+        <a class="db pv4 ph3 ph0-l no-underline black dim" href="{% url 'kaiketsu' %}">
+            <div class="flex flex-column flex-row-ns">
+                <div class="pr3-ns mb4 mb0-ns w-100">
+                    <img src="https://images.unsplash.com/photo-1495321308589-43affb814eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                        class="db" alt="">
+                </div>
+                <div class="w-100 w-60-ns pl3-ns tc">
+                    <h1 class="f3 f2-m f1-l fw2 black-90 mv3 avenir">Kaiketsu</h1>
+                    <h3 class="f5 f4-m f4-l fw2 black-50 mt0 lh-copy avenir">
+                        A mobile application built to help users with goal accomplishment and health improvement. Lorem
+                        ipsum lorem ipsum.
+                    </h3>
 
-        </div>
-    </a>
-    <a href="{% url 'spotswood' %}">
-        <div class="fl w-50 w-third-m w-25-ns">
-            <div class="grow aspect-ratio--1x1">
-                <img style="background-image:url('{% static 'media/test-dev-3.png' %}');"
-                    class="db bg-center cover aspect-ratio--object" />
+
+                </div>
             </div>
+        </a>
+    </article>
+    <article class="bb b--black-75">
+        <a class="db pv4 ph3 ph0-l no-underline black dim" href="{% url 'react' %}">
+            <div class="flex flex-column flex-row-ns">
+                <div class="pr3-ns mb4 mb0-ns w-100">
+                    <img src="https://images.unsplash.com/photo-1501618669935-18b6ecb13d6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                        class="db" alt="">
+                </div>
+                <div class="w-100 w-60-ns pl3-ns tc">
+                    <h1 class="f3 f2-m f1-l fw2 black-90 mv3 avenir">Checklist</h1>
+                    <h3 class="f5 f4-m f4-l fw2 black-50 mt0 lh-copy avenir">
+                        A simple, yet robust online to-do application. Built with a React frontend and Django REST API
+                        supporting the backend.
+                    </h3>
 
-        </div>
-    </a>
-    <a href="{% url 'spotswood' %}">
-        <div class="fl w-50 w-third-m w-25-ns">
-            <div class="grow aspect-ratio--1x1">
-                <img style="background-image:url('{% static 'media/test-dev-3.png' %}');"
-                    class="db bg-center cover aspect-ratio--object" />
+
+                </div>
             </div>
+        </a>
+    </article>
+    <article class="bb b--black-75">
+        <a class="db pv4 ph3 ph0-l no-underline black dim" href="{% url 'decreedly' %}">
+            <div class="flex flex-column flex-row-ns">
+                <div class="pr3-ns mb4 mb0-ns w-100">
+                    <img src="https://images.unsplash.com/photo-1463003160077-801f9fd8d095?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                        class="db" alt="">
+                </div>
+                <div class="w-100 w-60-ns pl3-ns tc">
+                    <h1 class="f3 f2-m f1-l fw2 black-90 mv3 avenir">Decreedly</h1>
+                    <h3 class="f5 f4-m f4-l fw2 black-50 mt0 lh-copy avenir">
+                        A powerful and fully concieved blogging application with a heavy emphasis on user experience.
+                        Utilizing new technologies and working collaboratively.
+                    </h3>
 
-        </div>
-    </a>
 
+                </div>
+            </div>
+        </a>
+    </article>
 
-</main>
+</section>
 
 
 
