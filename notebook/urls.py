@@ -47,4 +47,10 @@ urlpatterns = [
     path('react/',
          TemplateView.as_view(template_name='react.html'),
          name='react'),
+    path('testing/',
+         TemplateView.as_view(template_name='testing.html'),
+         name='testing'),
+    path('tester/',
+         TemplateView.as_view(template_name='tester.html'),
+         name='tester'),
 ]
